@@ -63,7 +63,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail"/>
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Campsite" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
                         <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
@@ -77,10 +77,14 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                </div>
             </div>
-            <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
         </div>
 
         <div class="row row-content align-items-center">
@@ -89,44 +93,45 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img\bootstrap-thumb.png" alt="Bootstap Outfitter"/>
+                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
-                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--reservation form-->
+<!--Reservation form-->
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
-                    <h3 class="class-header bg-info text-white">Reserver a Campsite</h3>
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="form-group row">
                                 <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <!-- Select Dropdown -->
                                 <div class="col">
-                                    <select name="numCampers" id="numCampers" class="form-control">
-                                        <option selected>Select..</option>
+                                    <select id="numCampers" class="form-control">
+                                        <option selected>Select...</option>
                                         <option value="one">1</option>
                                         <option value="two">2</option>
                                         <option value="three">3</option>
                                         <option value="four">4</option>
                                         <option value="five">5</option>
                                         <option value="six">6</option>
-                                        
                                     </select>
                                 </div>
                             </div>
-                                <div class="form-group row">
-                                    <div class="col">
-                                        <label for="date" class="col-sm-6">Date</label>
-                                        <input type="date" name="date" id="date" class="form-control" placeholder="Date">
-                                    </div>
+                            <!-- Date -->
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">   
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
                                 </div>
-
+                            </div>
+                            <!-- Search Button -->
                             <div class="form-group row">
                                 <div class="col">
                                     <button type="submit" class="btn btn-primary">Search</button>
